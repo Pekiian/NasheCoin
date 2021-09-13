@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/** Globales **/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1, h2, h3, p{
+    text-align: center;
+    color: white ;
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fff;
+}
+
+a:last-child{
+    margin-right: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.contene2{
+    max-width: 90%;
+    margin-right: 0 auto;
+}
+
+/** Header **/
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** Header **/
+#hero1{
+    background:url('../img/nasheog.jpg');
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    height: 100vh;
+}
+
+.hero, .content{
+    text-align:center; 
+    position:relative;
+    width: 100%;
+}
+   
+.inner{
+    min-height:600px;
+    position: relative;
+}
+   
+.hero .inner{
+    background: rgba(0,0,0,0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+}
+
+.copy{
+    position:absolute; 
+    top:50%; 
+    height:10em; 
+    margin-top:-5em; 
+    width:100%;
+  }
+  
+  .intro {
+    height: 100vh;
+    position: relative;
+  }
+
+/** Utilidades **/
+.fw-bold{
+    font-weight: bold;
+}
+
+.c-white{
+    color: #fff;
+}
+
+.c-black{
+    color: #000000;
+}
+
+/** Precios **/
+.finanzas{
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    background-color: #222222;
+}
+
+/** Main **/
+.why-buy{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .why-buy,
+    .finanzas{
+        display: block;
+    }
+}
+
+/** Footer **/
+.site-footer,
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.red{
+    margin-right: 10px;
+    list-style: none;
+    color:#fff;
+}
